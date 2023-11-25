@@ -6,9 +6,9 @@ UUID=${UUID:-'de04add9-5c68-8bab-950c-08cd5320df18'}
 WEB_USERNAME=${WEB_USERNAME:-'admin'}
 WEB_PASSWORD=${WEB_PASSWORD:-'password'}
 
-check_argo() {
-  ! nc -vzw3 198.41.192.77 7844 && echo -e '********************\nError: Argo 不可用\n********************' && exit 1 || echo -e '********************\nArgo 可用\n********************'
-}
+#check_argo() {
+#  ! nc -vzw3 198.41.192.77 7844 && echo -e '********************\nError: Argo 不可用\n********************' && exit 1 || echo -e '********************\nArgo 可用\n********************'
+#}
 
 generate_config() {
   cat > /tmp/config.json << EOF
